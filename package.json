@@ -1,0 +1,16 @@
+{
+  "name": "mybomma-platform",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MYbomma - Realtime Production Cinema & Video Streaming Platform",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"yellow,cyan\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "start": "npm run start --prefix server",
+    "test:e2e": "node test-e2e.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
