@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Film, Lock, Mail, ArrowRight, Shield, User as UserIcon, Eye, EyeOff } from 'lucide-react';
+import { Film, Lock, Mail, ArrowRight, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../context/AuthContext.js';
 import { useToast } from '../context/ToastContext.js';
 
@@ -32,17 +32,6 @@ export const LoginPage: React.FC = () => {
       showToast(err.message || 'Login failed', 'error');
     } finally {
       setIsLoading(false);
-    }
-  };
-
-  // Quick Demo Buttons
-  const fillDemoCredentials = (role: 'member' | 'admin') => {
-    if (role === 'admin') {
-      setEmail('admin@mybomma.com');
-      setPassword('Director@MYbomma#Ultra2026!');
-    } else {
-      setEmail('rohan@mybomma.com');
-      setPassword('Rohan#Member$Cinema2026!');
     }
   };
 
@@ -136,31 +125,6 @@ export const LoginPage: React.FC = () => {
             )}
           </button>
         </form>
-
-        {/* Quick Demo Pre-fill Buttons */}
-        <div className="mt-6 pt-6 border-t border-gray-800/80">
-          <p className="text-[11px] text-gray-400 font-semibold uppercase tracking-wider mb-2 text-center">
-            Instant Test Credentials
-          </p>
-          <div className="grid grid-cols-2 gap-2 text-xs">
-            <button
-              type="button"
-              onClick={() => fillDemoCredentials('member')}
-              className="p-2 rounded-lg bg-surface hover:bg-surface-hover border border-gray-800 text-gray-300 hover:text-gold hover:border-gold/40 transition flex items-center justify-center gap-1.5"
-            >
-              <UserIcon className="w-3.5 h-3.5 text-gold" />
-              Rohan (Member)
-            </button>
-            <button
-              type="button"
-              onClick={() => fillDemoCredentials('admin')}
-              className="p-2 rounded-lg bg-surface hover:bg-surface-hover border border-gray-800 text-gray-300 hover:text-gold hover:border-gold/40 transition flex items-center justify-center gap-1.5"
-            >
-              <Shield className="w-3.5 h-3.5 text-gold" />
-              Admin Demo
-            </button>
-          </div>
-        </div>
 
         {/* Signup Link */}
         <p className="mt-6 text-center text-xs text-gray-400">

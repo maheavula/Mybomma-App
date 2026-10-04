@@ -122,6 +122,27 @@
       },
       "createdAt": "2026-09-21T17:52:23.195Z",
       "customAuditTag": "SECURITY_BENCHMARK_VERIFIED"
+    },
+    {
+      "id": "f3de7f88-b98e-4642-ac12-a7066b99e140",
+      "name": "Aarav Mehta",
+      "email": "benchmark_1791123267726@testcinema.com",
+      "passwordHash": "$2a$10$R2WB61XHzIFxkM0xGQDRKOuF6WzNj1uCfM5DVChUV7OUPa1gU6sai",
+      "role": "admin",
+      "status": "suspended",
+      "phone": "+91 9123499999",
+      "subscription": {
+        "planId": "ff5378ab-40c7-40f0-9610-f865ac7065db",
+        "status": "canceled",
+        "startDate": "2026-10-04T14:14:28.507Z",
+        "expiresAt": "2099-12-31T23:59:59.000Z"
+      },
+      "preferences": {
+        "defaultAudio": "Hindi / Original",
+        "autoPlayNext": true
+      },
+      "createdAt": "2026-10-04T14:14:28.325Z",
+      "customAuditTag": "SECURITY_BENCHMARK_VERIFIED"
     }
   ],
   "plans": [
@@ -179,7 +200,7 @@
       "requiredTier": "Super Cinema",
       "isFeatured": true,
       "isPublished": true,
-      "views": 890410,
+      "views": 890412,
       "createdAt": "2026-01-10T00:00:00.000Z"
     },
     {
@@ -541,6 +562,17 @@
       "transactionId": "TXN-B8B1FDCB0586",
       "status": "completed",
       "createdAt": "2026-09-21T17:52:23.391Z"
+    },
+    {
+      "id": "b222b345-7c84-437c-800c-e820e422b50a",
+      "userId": "f3de7f88-b98e-4642-ac12-a7066b99e140",
+      "planId": "ff5378ab-40c7-40f0-9610-f865ac7065db",
+      "amount": 100,
+      "currency": "INR",
+      "paymentMethod": "Test Card",
+      "transactionId": "TXN-6ACE4FC01CB1",
+      "status": "completed",
+      "createdAt": "2026-10-04T14:14:28.507Z"
     }
   ],
   "watchlists": [
@@ -562,18 +594,18 @@
       "expiresAt": "2026-10-18T09:24:31.074Z"
     },
     {
-      "id": "19b028ce-78eb-4f52-877e-d4c0c56a39ce",
-      "userId": "0cbc9e0b-cb1e-42eb-a764-b2fbd11bfd0d",
-      "createdAt": "2026-09-21T17:52:23.534Z",
-      "loginTimestamp": "2026-09-21T17:52:23.534Z",
-      "expiresAt": "2026-10-21T17:52:23.534Z"
+      "id": "54eddd76-e280-4136-97f0-93a27f7ca7c8",
+      "userId": "5034907a-48fc-4cea-bb74-690957605754",
+      "createdAt": "2026-10-04T14:14:28.190Z",
+      "loginTimestamp": "2026-10-04T14:14:28.190Z",
+      "expiresAt": "2026-11-03T14:14:28.190Z"
     },
     {
-      "id": "882f2a60-b7ae-4447-a8ca-a82b60a54b06",
-      "userId": "5034907a-48fc-4cea-bb74-690957605754",
-      "createdAt": "2026-09-21T17:54:12.988Z",
-      "loginTimestamp": "2026-09-21T17:54:12.988Z",
-      "expiresAt": "2026-10-21T17:54:12.988Z"
+      "id": "fb64d8d2-86a6-46b6-8b48-313f2ac8c2ce",
+      "userId": "0cbc9e0b-cb1e-42eb-a764-b2fbd11bfd0d",
+      "createdAt": "2026-10-04T14:14:28.631Z",
+      "loginTimestamp": "2026-10-04T14:14:28.631Z",
+      "expiresAt": "2026-11-03T14:14:28.631Z"
     }
   ],
   "metadata": {
